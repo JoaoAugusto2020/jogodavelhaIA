@@ -24,7 +24,11 @@ $(document).ready(function() {
       if (gameOver || state[index]) return;
 
       state[index] = currentPlayer;
-      $(this).text(currentPlayer).addClass("taken");
+      if(currentPlayer == "X"){
+        $(this).text(currentPlayer).addClass("vermelho");
+      }else{
+        $(this).text(currentPlayer).addClass("azul");
+      }
 
       if (checkWin()) {
           $message.text(`Jogador ${currentPlayer} venceu!`);

@@ -29,9 +29,13 @@ body {
   cursor: pointer;
 }
 
-.taken {
+.vermelho {
   pointer-events: none;
-  background-color: lightgray;
+  background-color: rgb(219, 68, 68);
+}
+.azul {
+  pointer-events: none;
+  background-color: rgb(82, 82, 218);
 }
 
 #message {
